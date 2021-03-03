@@ -1,0 +1,55 @@
+A <span>Docker</span> image of <span>The Benny App</span> is available on
+<a
+  :href="links.dockerImage"
+  target="_blank">
+  <b>
+    Docker Hub
+  </b>.
+</a>
+
+<br><br>
+
+<div class="input-group mb-2">
+  <!-- Copy code to pull Docker image -->
+  <input
+    id="docker-code-snippet-pull"
+    class="text-info bg-light border border-info p-2 text-muted"
+    style="width:380px"
+    value="docker pull stcybrdgs/scb-apps:thebennyapp"
+    readonly>
+  <div class="input-group-append">
+    <button
+      class="btn btn-md btn-outline-info"
+      title="Copy"
+      id="copy-button"
+      data-clipboard-target="#docker-code-snippet-pull">
+      <i class="fas fa-clipboard"></i>
+    </button>
+  </div>
+</div>
+
+  <!-- Copy code to run Docker image -->
+<div class="input-group mb-2">
+  <input
+    id="docker-code-snippet-run"
+    class="text-info bg-light border border-info p-2 text-muted"
+    style="width:380px"
+    value="docker run -p 5000:80 stcybrdgs/scb-apps:thebennyapp"
+    readonly>
+  <div class="input-group-append">
+    <button
+      class="btn btn-md btn-outline-info"
+      title="Copy"
+      id="copy-button"
+      data-clipboard-target="#docker-code-snippet-run">
+      <i class="fas fa-clipboard"></i>
+    </button>
+  </div>
+</div>
+
+<br>
+
+After issuing the <em>run</em> command locally, you may view the app in a browser at <b>localhost:5000</b>.
+<br><br>
+Within the Docker container, the Flask app is served to port 80.
+<br><br>

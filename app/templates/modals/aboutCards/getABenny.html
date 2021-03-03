@@ -1,0 +1,21 @@
+<!-- Get a Benny : content -->
+Whenever you <span>Get a Benny</span>, the server will run your data and return a <span>Numerical Distribution</span> and a
+<span>Chi Squared Statistic</span>. The response is then parsed into a <em>Benny</em>, which includes:
+<ul>
+  <li>
+    <b>
+      <a
+        :href="links.highchartsSite"
+        target="_blank">
+        Highcharts
+        </a>
+      <span>Display</span>
+    </b> - illustrates your data against the Benford distribution
+  </li>
+  <li><span>Chi Squared Statistic</span> - evaluates your result against the set limit of 8.0</li>
+  <li><span>Data Table</span> - shows the raw distribution values</li>
+  <li><span>Inclusions Report</span> - shows which data was included in the analysis </li>
+</ul>
+The computed <span>Numerical Distribution</span> does not include percentages if they are less than 1%.
+
+<br><br>
